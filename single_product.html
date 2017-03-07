@@ -1,0 +1,945 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Arcadia team/products/single product</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+        <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    </head>
+    <body id="products">
+        <header>
+            <section class="brown">
+                <div class="container">
+                    <div class="nav-register">
+                        <a href="#" data-toggle="modal" data-target="#myModal">Prijava</a>
+                        <span>|</span>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Zahtev za registraciju</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt="Arcadia logo" class="img-responsive"/>
+                        </a>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>
+                                    <form class="navbar-form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <button type="submit" class="btn btn-default brown"><span class="fa fa-search"></span></button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <form class="navbar-form">
+                                        <select class="form-control">
+                                            <option>Narudzbina za 01.01.2017.</option>
+                                            <option>Narudzbina za 02.01.2017.</option>
+                                            <option>Narudzbina za 03.01.2017.</option>
+                                            <option>Narudzbina za 04.01.2017.</option>
+                                            <option>Narudzbina za 05.01.2017.</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li><a href="#" class="text-uppercase brown">shop</a></li>
+                                <li><a href="#" class="text-uppercase brown">chart (0)</a></li>
+                            </ul>
+                            <div class="bottom-nav center-block">
+                                <ul class="list-inline list-unstyled">
+                                    <li class="text-uppercase"><a href="home.html">naslovna <span class="sr-only">(current)</span></a></li>
+                                    <li class="active text-uppercase"><a href="products.html">proizvodi</a></li>
+                                    <li class="text-uppercase"><a href="about.html">o nama</a></li>
+                                    <li class="text-uppercase"><a href="contact.html">kontakt</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- /.navbar-collapse -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>           
+            <section class="all-products">
+                <div class="container-fluid">
+                    <div class="row">
+                        <p class="text-center brown-font see-more">
+                            <a href="javascript:void(0)"><span class="fa fa-cog"></span>prikazi vise</a>
+                        </p>
+                        <div class="col-md-2 aside">
+                            <p class="brown-font">Prikaži</p>
+                            <form class="contact-form">
+                                <input type="checkbox" id="all-products" value="show" name="svi proizvodi">
+                                <label for="all-products" class="text-uppercase">sve proizvode</label><br>
+                                <input type="checkbox" id="action" value="show" name="akcije">
+                                <label for="action" class="text-uppercase">akcije</label><br>
+                                <input type="checkbox" id="new" value="show" name="novo u ponudi">
+                                <label for="new" class="text-uppercase">novo u ponudi</label><br>  
+                                <input type="checkbox" id="favourite" value="show" name="omiljeno">
+                                <label for="favourite" class="text-uppercase">omiljeno</label>  
+                            </form>
+                            <div class="bottom-line"></div>
+                            <p class="brown-font">Podkategorije</p>
+                            <p class="alcohol"><a href="javascript:void(0)"><span class="red-font">+</span>Alkoholna pića</a></p>
+                            <form class="contact-form unique alc-check">
+                                <input type="checkbox" id="absinth" value="alcohol" name="absinth">
+                                <label for="absinth" class="text-uppercase">absinth</label><br> 
+                                <input type="checkbox" id="bitteri" value="alcohol" name="bitteri">
+                                <label for="bitteri" class="text-uppercase">bitteri</label><br> 
+                                <input type="checkbox" id="brandy" value="alcohol" name="brandy">
+                                <label for="brandy" class="text-uppercase">brandy</label><br>  
+                                <input type="checkbox" id="burboni" value="alcohol" name="burboni">
+                                <label for="burboni" class="text-uppercase">burboni</label><br>  
+                                <input type="checkbox" id="dzin" value="alcohol" name="džin">
+                                <label for="dzin" class="text-uppercase">džin</label><br> 
+                                <input type="checkbox" id="konjak" value="alcohol" name="konjak">
+                                <label for="konjak" class="text-uppercase">konjak</label>
+                            </form>
+                            <p class="tea"><a href="javascript:void(0)"><span class="red-font">+</span>Čajevi, kafe i hrana</a></p>
+                            <form class="contact-form unique tea-check">
+                                <input type="checkbox" id="artikal1" value="tea" name="artikal1">
+                                <label for="artikal1" class="text-uppercase">artikal1</label><br> 
+                                <input type="checkbox" id="artikal2" value="tea" name="artikal2">
+                                <label for="artikal2" class="text-uppercase">artikal2</label><br> 
+                                <input type="checkbox" id="artikal3" value="tea" name="artikal3">
+                                <label for="artikal3" class="text-uppercase">artikal3</label><br>  
+                                <input type="checkbox" id="artikal4" value="tea" name="artikal4">
+                                <label for="artikal4" class="text-uppercase">artikal4</label><br>  
+                                <input type="checkbox" id="artikal5" value="tea" name="artikal5">
+                                <label for="artikal5" class="text-uppercase">artikal5</label><br> 
+                                <input type="checkbox" id="artikal6" value="tea" name="artikal6">
+                                <label for="artikal6" class="text-uppercase">artikal6</label>
+                            </form>
+                            <p class="beer"><a href="javascript:void(0)"><span class="red-font">+</span>Piva, cideri i breezeri</a></p>
+                            <form class="contact-form unique beer-check">
+                                <input type="checkbox" id="beer1" value="beer" name="beer1">
+                                <label for="beer1" class="text-uppercase">beer1</label><br> 
+                                <input type="checkbox" id="beer2" value="beer" name="beer2">
+                                <label for="beer2" class="text-uppercase">beer2</label><br> 
+                                <input type="checkbox" id="beer3" value="beer" name="beer3">
+                                <label for="beer3" class="text-uppercase">beer3</label><br>  
+                                <input type="checkbox" id="beer4" value="beer" name="beer4">
+                                <label for="beer4" class="text-uppercase">beer4</label><br>  
+                                <input type="checkbox" id="beer5" value="beer" name="beer5">
+                                <label for="beer5" class="text-uppercase">beer5</label><br> 
+                            </form>
+                            <form class="contact-form champ">
+                                <input type="checkbox" id="champ" value="show" name="sampanjci">
+                                <label for="champ" class="text-uppercase">Šampanjci</label><br>
+                            </form>
+                            <p class="juice"><a href="javascript:void(0)"><span class="red-font">+</span>Sokovi</a></p>
+                            <form class="contact-form unique juice-check">
+                                <input type="checkbox" id="juice1" value="juice" name="juice1">
+                                <label for="juice1" class="text-uppercase">juice1</label><br> 
+                                <input type="checkbox" id="juice2" value="juice" name="juice2">
+                                <label for="juice2" class="text-uppercase">juice2</label><br> 
+                                <input type="checkbox" id="juice3" value="juice" name="juice3">
+                                <label for="juice3" class="text-uppercase">juice3</label><br>  
+                                <input type="checkbox" id="juice4" value="juice" name="juice4">
+                                <label for="juice4" class="text-uppercase">juice4</label><br>  
+                                <input type="checkbox" id="juice5" value="juice" name="juice5">
+                                <label for="juice5" class="text-uppercase">juice5</label><br> 
+                            </form>
+                            <form class="contact-form champ ch-mat">
+                                <input type="checkbox" id="material" value="show" name="sampanjci">
+                                <label for="material" class="text-uppercase">Ugostiteljski materijal</label><br>
+                            </form>
+                            <p class="vine"><a href="javascript:void(0)"><span class="red-font">+</span>Vina</a></p>
+                            <form class="contact-form unique vine-check">
+                                <input type="checkbox" id="vine1" value="vine" name="vine1">
+                                <label for="vine1" class="text-uppercase">vine1</label><br> 
+                                <input type="checkbox" id="vine2" value="vine" name="vine2">
+                                <label for="vine2" class="text-uppercase">vine2</label><br> 
+                                <input type="checkbox" id="vine3" value="vine" name="vine3">
+                                <label for="vine3" class="text-uppercase">vine3</label><br>  
+                                <input type="checkbox" id="vine4" value="vine" name="vine4">
+                                <label for="vine4" class="text-uppercase">vine4</label><br>  
+                                <input type="checkbox" id="vine5" value="vine" name="vine5">
+                                <label for="vine5" class="text-uppercase">vine5</label><br> 
+                            </form>
+                            <form class="contact-form champ">
+                                <input type="checkbox" id="water" value="show" name="vode">
+                                <label for="water" class="text-uppercase">Vode</label><br>
+                            </form>
+                            <form class="contact-form champ">
+                                <input type="checkbox" id="syrup" value="show" name="sirupi">
+                                <label for="syrup" class="text-uppercase">Sirupi</label><br>
+                            </form>
+                            <div class="bottom-line"></div>
+                            <div class="price-box">
+                                <form class="form-horizontal form-pricing" role="form">
+                                    <div class="price-slider">
+                                        <div class="row">
+                                            <div class="col-xs-1">
+                                                <a href="javascript:void(0)" class="brown">-</a>
+                                            </div>
+                                            <div class="col-xs-10">
+                                                <div id="slider"></div>
+                                            </div>
+                                            <div class="col-xs-1">
+                                                <a href="javascript:void(0)" class="red"><span>+</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price-form">
+                                        <div class="form-group">
+                                            <label for="amount" class="col-sm-6 control-label">Amount (): </label>
+                                            <span class="help-text">Please choose your amount</span>
+
+                                            <div class="col-sm-6">
+                                                <input type="hidden" id="amount" class="form-control">
+                                                <p class="price lead" id="amount-label"></p>
+                                                <span class="price">.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <article class="small-nav">
+                                <div>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="nav-bck text-uppercase"><span>proizvodi</span></li>
+                                        <li class="nav-middle text-uppercase"><span>alkoholna pica</span></li>
+                                        <li class="nav-last"><span>Absinth</span></li>
+                                    </ul>
+                                </div>   
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                        </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                            <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="drink-products">
+                                <div class="single-product">
+                                    <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                    <div class="product-details">
+                                        <div class="pull-left">
+                                            <p>Sa PDV-om</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <div class="pull-right">
+                                            <p>Bez PDV-a</p>
+                                            <p class="brown-font">2345,89</p>
+                                        </div> 
+                                        <figure>
+                                            <a href="#" class="single-popup-show">
+                                                <img src="img/product.png" alt="" class="img-responsive center-block"/>
+                                            </a>
+                                        </figure>
+                                        <p class="brown-font smaller text-center">Absolut 100 0.7 L</p>
+                                    </div>
+                                    <div class="add brown">
+                                        <a href="#" class="text-uppercase pull-left">dodaj u korpu</a>
+                                        <a href="#" class="pull-right">+</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="single-popup">
+                    <div class="wrapper">
+                        <div class="popup-header clearfix">
+                            <a href="#" class="pull-right close brown">x</a>
+                        </div>
+                        <div class="popup-inner">
+                            <div id="product-carousel" class="carousel slide" data-ride="carousel">                               
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                        <img src="css/style-images/absolut.png" alt="" class="img-responsive center-block"/>
+                                        <h3 class="text-center">Absolut 100 0.7 L</h3>
+                                        <div class="row">
+                                            <div class="col-xs-4 col-xs-offset-4">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <p>Sa PDV-om</p>
+                                                        <p class="brown-font">2345.89</p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <hr />
+                                                        <p>Bez PDV-a</p>
+                                                        <p class="brown-font">2345.89</p>
+                                                    </div>
+                                                </div> 
+                                                <h4 class="text-center red-font">1345,89</h4>
+                                                <div class="buy-now row">
+                                                    <div class="col-xs-3">
+                                                        <p class="shop-cart pull-right"><a href="javascript:void(0)"></a></p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p class="add-cart text-center"><span>DODAJ</span></p>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <p class="red"><a href="javascript:void(0)"><span class="fa fa-plus"></span></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                        <img src="css/style-images/absolut.png" alt="" class="img-responsive center-block"/>
+                                        <h4 class="text-center">Absolut 100 0.7 L</h4>
+                                        <div class="row">
+                                            <div class="col-xs-4 col-xs-offset-4">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <p>Sa PDV-om</p>
+                                                        <p class="brown-font">2345.89</p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <hr />
+                                                        <p>Bez PDV-a</p>
+                                                        <p class="brown-font">2345.89</p>
+                                                    </div>
+                                                </div> 
+                                                <h4 class="text-center red-font">1345,89</h4>
+                                                <div class="buy-now row">
+                                                    <div class="col-xs-3">
+                                                        <p class="shop-cart pull-right"><a href="javascript:void(0)"></a></p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p class="add-cart text-center"><span>DODAJ</span></p>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <p class="red"><a href="javascript:void(0)"><span class="fa fa-plus"></span></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p class="text-center">Šifra artikla: <b>2340</b></p>
+                                        <img src="css/style-images/absolut.png" alt="" class="img-responsive center-block"/>
+                                        <h4 class="text-center">Absolut 100 0.7 L</h4>
+                                        <div class="row">
+                                            <div class="col-xs-4 col-xs-offset-4">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <p>Sa PDV-om</p>
+                                                        <p class="brown-font">2345.89</p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <hr />
+                                                        <p>Bez PDV-a</p>
+                                                        <p class="brown-font">2345.89</p>
+                                                    </div>
+                                                </div> 
+                                                <h4 class="text-center red-font">1345,89</h4>
+                                                <div class="buy-now row">
+                                                    <div class="col-xs-3">
+                                                        <p class="shop-cart pull-right"><a href="javascript:void(0)"></a></p>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <p class="add-cart text-center"><span>DODAJ</span></p>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <p class="red"><a href="javascript:void(0)"><span class="fa fa-plus"></span></a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#product-carousel" role="button" data-slide="prev">
+                                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#product-carousel" role="button" data-slide="next">
+                                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3 arcadia foot-pad">
+                            <p>Arcadia Team d.o.o.</p>
+                        </div>
+                        <div class="col-sm-3 col-md-3 text-center vertical foot-pad">
+                            <p>Autoput 20, 11080</p>
+                        </div>
+                        <div class="col-sm-3 col-md-2 text-center vertical">
+                            <p>011 269 2605</p>
+                            <p>063 106 7009</p>
+                        </div>
+                        <div class="col-sm-3 col-md-3 text-center vertical foot-pad">
+                            <p>
+                                <a href="mailto:arcadia@distribucija.rs">arcadia@distribucija.rs</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center">
+                    <a href="#"><span class="fa fa-facebook"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                    <a href="#"><span class="fa fa-rss"></span></a>
+                </div>
+            </div>
+        </footer>
+<!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4 class="text-uppercase text-center">prijava</h4>
+                                <p class="text-center"><i>Molimo Vas da uneste svoj e/mail i password</i></p>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="control-label sr-only">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="EMAIL*" data-error="Email addresa je neispravna" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="control-label center-block sr-only">Password</label>
+                                        <div class="form-group">
+                                            <input type="password" data-minlength="4" class="form-control" id="inputPassword" placeholder="PASSWORD" required>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="pull-left">Zaboravili ste sifru?</a>
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input type="checkbox"> Zapamti
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">PRIJAVI SE</button>
+                                </form>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <h4 class="text-uppercase text-center">registracija</h4>
+                                <p class="text-center"><i>Molimo Vas da uneste svoj e/mail i password</i></p>
+                                <button type="submit" class="btn btn-default btn-reg">REGISTRUJ SE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
