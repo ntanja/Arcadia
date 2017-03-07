@@ -1,0 +1,318 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /*****************************NAVIGATION*****************/
+    .navbar-brand {
+        left: 35%;
+        top: 25px;
+    }
+    .navbar-brand > img {
+        max-width: 100%;
+    }
+    .navbar-form {
+        margin-left: -15px;
+        margin-bottom: 8px;
+    }
+    .navbar-right{
+        margin-top: 25px;
+    }
+    .nav > li {
+        display: block;
+    }
+    .navbar-nav li a{
+        width: 80px;
+    }
+    .bottom-nav{
+        margin-top: 25%;   
+    }
+    .bottom-nav ul li{
+        display: inline-block;
+    }
+    .bottom-nav ul li a{
+        padding-right: 40px;
+    }
+    /**************************FOOTER*****************/
+    .arcadia{
+        text-align: right;
+    }
+    /**************************************HOME PAGE***************************/
+    /**************************section 'drinks'*****************/
+    .drink-menu{
+        padding-left: 11%;
+    }
+    .drink-menu a {
+        font-size: 14px;
+    }
+    .drink-menu #dropdown-tea ul{
+        margin-top: -12%;
+    }
+    .drink-menu #dropdown-beer ul{
+        margin-top: -24%;
+    }
+    .drink-menu #dropdown-champ ul{
+        margin-top: -35%;
+    }
+    .drink-menu #dropdown-juice ul{
+        margin-top: -48%;
+    }
+    .drink-menu #dropdown-material ul{
+        margin-top: -57%;
+    }
+    .drink-menu #dropdown-vine ul{
+        margin-top: -70%;
+    }
+    .drink-menu #dropdown-water ul{
+        margin-top: -82%;
+    }
+    .drink-menu #dropdown-syrup ul{
+        margin-top: -93%;
+    }
+    .bottle{
+        border-bottom: none;
+        border-top: none;
+    }
+    .bottle img{
+        height: 475px;
+    }
+    /**************************section 'products'*****************/
+    .drink-products{
+        width: 18.0%;
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .drink-products:last-of-type{
+        margin-right: 0;
+    }
+    .add{
+        padding: 10px 5px;
+    }
+    /**************************************PRODUCTS PAGE***************************/
+    /**************************section 'all-products'*****************/
+    .small-nav{
+        font-size: 14px;
+    }
+    .nav-bck{
+        background-size: cover;
+    }
+    .nav-bck span{
+        padding: 15px 45px 15px 25px;
+    }
+    .nav-middle span{
+        padding-left: 30px;
+    }
+    .nav-last span{
+        padding-left: 50px;
+    }
+    /**************************************CONTACT PAGE***************************/
+    .map-block iframe{
+        width: 100%;
+        height: 300px;
+    }
+    /**************************************ABOUT PAGE***************************/
+    .o-nama-text p {
+        padding: 0 75px;
+    }
+    /****************************LOG IN/REGISTER MODAL***************************/
+    .modal-body .btn{
+        margin-left: 70px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /*****************************NAVIGATION*****************/
+    .bottom-nav{
+        margin-top: 18%;   
+    }
+    .navbar-brand {
+        left: 35%;
+    }
+    /**************************************HOME PAGE***************************/
+    /**************************section 'drinks'*****************/
+    .bottle{
+        border-bottom: 1px solid #efe1ce;
+        border-top: 1px solid #efe1ce;
+    }
+    .drink-menu a {
+        font-size: 12px;
+    }
+    .drink-menu #dropdown-tea ul{
+        margin-top: -23%;
+    }
+    .drink-menu #dropdown-beer ul{
+        margin-top: -45%;
+    }
+    .drink-menu #dropdown-champ ul{
+        margin-top: -70%;
+    }
+    .drink-menu #dropdown-juice ul{
+        margin-top: -93%;
+    }
+    .drink-menu #dropdown-material ul{
+        margin-top: -115%;
+    }
+    .drink-menu #dropdown-vine ul{
+        margin-top: -140%;
+    }
+    .drink-menu #dropdown-water ul{
+        margin-top: -162%;
+    }
+    .drink-menu #dropdown-syrup ul{
+        margin-top: -185%;
+    }
+    /**************************section 'products'*****************/
+    .headline h2{
+        font-size: 48px;
+    }
+    .big-line {
+        padding: 25px 0;
+    }
+    .drink-products{
+        width: 18.5%;
+        margin-right: 10px;
+    }
+    .drink-products:last-of-type{
+        margin-right: 0;
+    }
+    .add{
+        padding: 10px 15px;
+    }
+    /**************************************PRODUCTS PAGE***************************/
+    /**************************section 'all-products'*****************/
+    .all-products .see-more{
+        display: none;
+    }
+    .aside{
+        display: block;
+    }
+    #products .drink-products{
+        width: 18%;
+    }
+    .price-box {
+        width: 160px;
+    }
+    .carousel-control .fa-angle-left, .carousel-control .icon-prev, .carousel-control .icon-next {
+        margin-top: 0px;
+    }
+    .single-popup .carousel .item img{
+        max-height: 200px;
+    }
+    /**************************************CONTACT PAGE***************************/
+    .map-block iframe{
+        height: 400px;
+    }
+    .big-contact h2 {
+        font-size: 48px;
+        padding: 35px 25px 0 25px;
+    }
+    /**************************************ABOUT PAGE***************************/
+    .o-nama-text p {
+        padding: 0 150px;
+    }
+    /****************************LOG IN/REGISTER MODAL***************************/
+    .modal-body .btn{
+        margin-left: 40px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /*****************************NAVIGATION*****************/
+    .navbar-nav {
+        margin: 7.5px -15px;
+    }
+    .navbar-left, .navbar-right {
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    .navbar-brand {
+        left: 40%;
+        top: 22px;
+    }
+    .navbar-form select{
+        padding: 0;
+    }
+    /**************************************HOME PAGE***************************/
+    /**************************section 'drinks'*****************/
+    .drink-menu{
+        padding-left: 14%;
+    }
+    .drink-menu a {
+        font-size: 14px;
+    }
+    .drink-menu #dropdown-tea ul{
+        margin-top: -20%;
+    }
+    .drink-menu #dropdown-beer ul{
+        margin-top: -38%;
+    }
+    .drink-menu #dropdown-champ ul{
+        margin-top: -58%;
+    }
+    .drink-menu #dropdown-juice ul{
+        margin-top: -78%;
+    }
+    .drink-menu #dropdown-material ul{
+        margin-top: -93%;
+    }
+    .drink-menu #dropdown-vine ul{
+        margin-top: -115%;
+    }
+    .drink-menu #dropdown-water ul{
+        margin-top: -135%;
+    }
+    .drink-menu #dropdown-syrup ul{
+        margin-top: -151%;
+    }
+    /**************************section 'products'*****************/
+    .headline h2{
+        font-size: 60px;
+    }
+    .headline{
+        margin-right: -40px
+    }
+    .drink-products{
+        width: 18.5%;
+        margin-right: 12px;
+    }
+    /**********************************PRODUCTS PAGE***************************/
+    /***********************section 'all-products'*****************/
+    .small-nav{
+        margin-left: -25px;
+    }
+    .nav-bck{
+        margin-left: 30px;
+    }
+    .all-products .col-md-2{
+        padding-right: 20px;
+    }
+    .all-products .col-md-10{
+        margin-left: -40px;
+        padding-right: 90px;
+    }
+    .price-slider .row {
+        margin-left: -15px;
+    }
+    .price-box {
+        width: 145px;
+    }
+    /**************************************CONTACT PAGE***************************/
+    .map-block iframe{
+        height: 490px;
+    }
+    /****************************LOG IN/REGISTER MODAL***************************/
+    .modal-body .form-control{
+        max-width: 420px;
+    }
+    .modal-body{
+        padding: 0  280px;
+    }
+    .modal-body .btn-reg {
+        margin: 0 auto;
+        margin-top: 125px;
+    }
+    .modal-body .btn{
+        margin-left: 70px;
+    }
+
+}
+
